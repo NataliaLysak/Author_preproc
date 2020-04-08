@@ -1,0 +1,717 @@
+@charset "UTF-8";
+@import "../fontawesome-free-5.0.8/web-fonts-with-css/css/fontawesome-all.css";
+@import "owl.carousel.min.css";
+@import "owl.theme.default.min.css";
+@font-face {
+  font-family: "Open Sans";
+  src: url("../fonts/OpenSans.eot");
+  src: url("../fonts/OpenSans.eot?#iefix") format("embedded-opentype"), url("../fonts/OpenSans.woff2") format("woff2"), url("../fonts/OpenSans.woff") format("woff"), url("../fonts/OpenSans.ttf") format("truetype"), url("../fonts/OpenSans.svg#OpenSans") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+* {
+  padding: 0;
+  margin: 0;
+  font-size: inherit;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.container {
+  max-width: 1170px;
+  margin: auto;
+}
+
+.flex_container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.header_padding {
+  padding-bottom: 30px;
+}
+
+@media screen and (max-width: 768px) {
+  header .container {
+    width: 100%;
+  }
+}
+header .container .logo {
+  padding-top: 30px;
+}
+header .container .logo img {
+  width: 100%;
+}
+header .container nav ul li {
+  display: inline-block;
+  color: #484c55;
+  font-size: 15px;
+  padding-top: 30px;
+  padding-left: 27px;
+  padding-right: 27px;
+  text-transform: uppercase;
+  font-family: "Open Sans";
+}
+header .container nav ul li:hover {
+  background-color: #ffffff;
+}
+header .container nav ul li:hover a:after {
+  width: 100%;
+}
+header .container nav ul li a:hover {
+  color: #49cbcd;
+  background-color: #ffffff;
+}
+header .container nav ul li a:after {
+  content: "";
+  display: block;
+  width: 0%;
+  height: 3px;
+  background-color: #49cbcd;
+  margin-top: 45px;
+  transition: 0.3s;
+}
+
+.base {
+  background-image: url("../images/Base.png");
+  background-position: center top;
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+}
+@media screen and (max-width: 768px) {
+  .base {
+    width: 100%;
+  }
+}
+
+.container_base {
+  max-width: 1234px;
+  margin: auto;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+.container_base h1 {
+  font-size: 40px;
+  text-align: center;
+  color: #ffffff;
+  margin-bottom: 46px;
+}
+@media screen and (max-width: 768px) {
+  .container_base h1 {
+    font-size: 30px;
+  }
+}
+@media screen and (max-width: 414px) {
+  .container_base h1 {
+    font-size: 20px;
+    margin-bottom: 15px;
+  }
+}
+@media screen and (max-width: 375px) {
+  .container_base h1 {
+    font-size: 10px;
+    margin-bottom: 10px;
+  }
+}
+.container_base h3, .container_base h4 {
+  font-size: 15px;
+  text-align: center;
+  color: #ffffff;
+  font-family: "Open Sans";
+}
+@media screen and (max-width: 768px) {
+  .container_base h3, .container_base h4 {
+    font-size: 10px;
+  }
+}
+@media screen and (max-width: 375px) {
+  .container_base h3, .container_base h4 {
+    font-size: 8px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .container_base {
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .container_base {
+    width: 100%;
+  }
+}
+
+.mg-b1 {
+  margin-bottom: 24px;
+}
+@media screen and (max-width: 768px) {
+  .mg-b1 {
+    margin-bottom: 12px;
+  }
+}
+
+.mg-b2 {
+  margin-bottom: 62px;
+}
+@media screen and (max-width: 768px) {
+  .mg-b2 {
+    margin-bottom: 30px;
+  }
+}
+@media screen and (max-width: 414px) {
+  .mg-b2 {
+    margin-bottom: 10px;
+  }
+}
+
+.learn {
+  width: 225px;
+  margin: auto;
+  text-align: center;
+  border: 3px solid #ffffff;
+  border-radius: 5%;
+  padding-top: 22px;
+  padding-bottom: 22px;
+}
+@media screen and (max-width: 768px) {
+  .learn {
+    width: 125px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+  }
+}
+@media screen and (max-width: 414px) {
+  .learn {
+    width: 100px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+  }
+}
+@media screen and (max-width: 375px) {
+  .learn {
+    width: 70px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
+}
+.learn a {
+  color: #ffffff;
+  font-size: 25px;
+  font-family: "Open Sans";
+}
+@media screen and (max-width: 768px) {
+  .learn a {
+    font-size: 10px;
+  }
+}
+@media screen and (max-width: 375px) {
+  .learn a {
+    font-size: 8px;
+  }
+}
+
+.owl-carousel .owl-nav .owl-prev {
+  background-color: #ffffff !important;
+  border-radius: 50%;
+  outline: none;
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  left: 45px;
+  top: 287px;
+  color: #49cbcd !important;
+  font-family: "Font Awesome 5 Free" !important;
+  font-weight: 900 !important;
+}
+@media screen and (max-width: 768px) {
+  .owl-carousel .owl-nav .owl-prev {
+    top: 140px;
+  }
+}
+@media screen and (max-width: 414px) {
+  .owl-carousel .owl-nav .owl-prev {
+    top: 80px;
+    width: 25px;
+    height: 25px;
+    left: 20px;
+  }
+}
+.owl-carousel .owl-nav .owl-prev:before {
+  content: "";
+}
+
+.owl-carousel .owl-nav .owl-next {
+  background-color: #ffffff !important;
+  border-radius: 50%;
+  outline: none;
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  right: 45px;
+  top: 287px;
+  color: #49cbcd !important;
+  font-family: "Font Awesome 5 Free" !important;
+  font-weight: 900 !important;
+}
+@media screen and (max-width: 768px) {
+  .owl-carousel .owl-nav .owl-next {
+    top: 140px;
+  }
+}
+@media screen and (max-width: 414px) {
+  .owl-carousel .owl-nav .owl-next {
+    top: 80px;
+    width: 25px;
+    height: 25px;
+    right: 20px;
+  }
+}
+.owl-carousel .owl-nav .owl-next:before {
+  content: "";
+}
+
+.basic {
+  background-color: #485460 !important;
+}
+
+.pro {
+  background-color: #49cbcd !important;
+}
+
+.color_buy_basic {
+  background-color: #788492;
+}
+
+.buy {
+  background-color: #f1f1f1;
+}
+.buy .container .block {
+  padding-top: 120px;
+  padding-bottom: 105px;
+  width: 370px;
+  margin: auto;
+}
+.buy .container nav ul {
+  list-style: none;
+}
+.buy .container li {
+  padding-top: 18px;
+  padding-bottom: 18px;
+  text-align: center;
+  font-size: 14px;
+  color: #8c9299;
+  font-family: "Open Sans";
+  background-color: #ffffff;
+  border-bottom: 1px solid #ecf0f1;
+}
+.buy .container li:first-of-type {
+  padding-top: 27px;
+  padding-bottom: 27px;
+  font-size: 26px;
+  color: #ffffff;
+  border-bottom: none;
+}
+.buy .container li:nth-child(2) {
+  padding-top: 27px;
+  padding-bottom: 27px;
+  background-color: #f8f9fb;
+  font-size: 20px;
+  color: #485460;
+}
+.buy .container li:last-of-type {
+  padding-top: 29px;
+  padding-bottom: 29px;
+  background-color: #f8f9fb;
+}
+.buy .container li a {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  display: block;
+  width: 170px;
+  margin: auto;
+  font-size: 17px;
+  color: #ffffff;
+  border-radius: 3%;
+}
+
+.drawer-list {
+  position: fixed;
+  z-index: 100;
+  right: 0;
+  top: 0;
+  height: 100vh;
+  width: 100vw;
+  transform: translate(100vw, 0);
+  -ms-transform: translatex(-100vw);
+  box-sizing: border-box;
+  pointer-events: none;
+  padding-top: 125px;
+  transition: width 475ms ease-out, transform 450ms ease, border-radius 0.8s 0.1s ease;
+  border-bottom-left-radius: 100vw;
+  background-color: #49cbcd;
+}
+
+@media (min-width: 768px) {
+  .drawer-list {
+    width: 20vw;
+  }
+}
+.drawer-list ul {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: auto;
+  overflow-x: hidden;
+  pointer-events: auto;
+}
+
+.drawer-list li {
+  list-style: none;
+  text-transform: uppercase;
+  pointer-events: auto;
+  white-space: nowrap;
+  box-sizing: border-box;
+  text-align: center;
+  transform: translatex(100vw);
+  /* ie workaround */
+  -ms-transform: translatex(-100vw);
+}
+
+.drawer-list li:last-child {
+  margin-bottom: 2em;
+}
+
+.drawer-list li a {
+  text-decoration: none;
+  color: #484c55;
+  text-align: center;
+  display: block;
+  padding: 1rem;
+  font-size: calc(24px - .5vw);
+}
+
+@media (min-width: 768px) {
+  .drawer-list li a {
+    text-align: center;
+    padding: 0.5rem;
+  }
+}
+.drawer-list li a:hover {
+  cursor: pointer;
+  background-color: #eeeef0 !important;
+}
+
+input.hamburger {
+  display: none;
+}
+
+input.hamburger:checked ~ .drawer-list {
+  transform: translatex(0);
+  border-bottom-left-radius: 0;
+}
+
+input.hamburger:checked ~ .drawer-list li {
+  transform: translatex(0);
+}
+
+input.hamburger:checked ~ .drawer-list li:nth-child(1) {
+  transition: transform 1s 0.08s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+}
+
+input.hamburger:checked ~ .drawer-list li:nth-child(2) {
+  transition: transform 1s 0.16s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+}
+
+input.hamburger:checked ~ .drawer-list li:nth-child(3) {
+  transition: transform 1s 0.24s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+}
+
+input.hamburger:checked ~ .drawer-list li:nth-child(4) {
+  transition: transform 1s 0.32s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+}
+
+input.hamburger:checked ~ .drawer-list li:nth-child(5) {
+  transition: transform 1s 0.4s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+}
+
+input.hamburger:checked ~ .drawer-list li:nth-child(6) {
+  transition: transform 1s 0.48s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+}
+
+input.hamburger:checked ~ .drawer-list li:nth-child(7) {
+  transition: transform 1s 0.56s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+}
+
+input.hamburger:checked ~ .drawer-list li:nth-child(8) {
+  transition: transform 1s 0.64s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+}
+
+input.hamburger:checked ~ .drawer-list li:nth-child(9) {
+  transition: transform 1s 0.72s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+}
+
+input.hamburger:checked ~ .drawer-list li:nth-child(10) {
+  transition: transform 1s 0.8s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+}
+
+input.hamburger:checked ~ .drawer-list li:nth-child(11) {
+  transition: transform 1s 0.88s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+}
+
+input.hamburger:checked ~ .drawer-list li:nth-child(12) {
+  transition: transform 1s 0.96s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+}
+
+input.hamburger:checked ~ .drawer-list li:nth-child(13) {
+  transition: transform 1s 1.04s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+}
+
+input.hamburger:checked ~ .drawer-list li:nth-child(14) {
+  transition: transform 1s 1.12s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+}
+
+input.hamburger:checked ~ .drawer-list li:nth-child(15) {
+  transition: transform 1s 1.2s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+}
+
+input.hamburger:checked ~ .drawer-list li:nth-child(16) {
+  transition: transform 1s 1.28s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+}
+
+input.hamburger:checked ~ .drawer-list li:nth-child(17) {
+  transition: transform 1s 1.36s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+}
+
+input.hamburger:checked ~ .drawer-list li:nth-child(18) {
+  transition: transform 1s 1.44s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+}
+
+input.hamburger:checked ~ .drawer-list li:nth-child(19) {
+  transition: transform 1s 1.52s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+}
+
+input.hamburger:checked ~ .drawer-list li:nth-child(20) {
+  transition: transform 1s 1.6s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+}
+
+input.hamburger:checked ~ .drawer-list li:nth-child(21) {
+  transition: transform 1s 1.68s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+}
+
+input.hamburger:checked ~ .drawer-list li:nth-child(22) {
+  transition: transform 1s 1.76s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+}
+
+input.hamburger:checked ~ .drawer-list li:nth-child(23) {
+  transition: transform 1s 1.84s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+}
+
+input.hamburger:checked ~ .drawer-list li:nth-child(24) {
+  transition: transform 1s 1.92s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+}
+
+input.hamburger:checked ~ .drawer-list li:nth-child(25) {
+  transition: transform 1s 2s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+}
+
+input.hamburger:checked ~ .drawer-list li:nth-child(26) {
+  transition: transform 1s 2.08s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+}
+
+input.hamburger:checked ~ .drawer-list li:nth-child(27) {
+  transition: transform 1s 2.16s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+}
+
+input.hamburger:checked ~ .drawer-list li:nth-child(28) {
+  transition: transform 1s 2.24s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+}
+
+input.hamburger:checked ~ .drawer-list li:nth-child(29) {
+  transition: transform 1s 2.32s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+}
+
+input.hamburger:checked ~ .drawer-list li:nth-child(30) {
+  transition: transform 1s 2.4s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+}
+
+input.hamburger:checked ~ .drawer-list li:nth-child(31) {
+  transition: transform 1s 2.48s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+}
+
+input.hamburger:checked ~ .drawer-list li:nth-child(32) {
+  transition: transform 1s 2.56s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+}
+
+input.hamburger:checked ~ .drawer-list li:nth-child(33) {
+  transition: transform 1s 2.64s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+}
+
+input.hamburger:checked ~ .drawer-list li:nth-child(34) {
+  transition: transform 1s 2.72s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+}
+
+input.hamburger:checked ~ .drawer-list li:nth-child(35) {
+  transition: transform 1s 2.8s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+}
+
+input.hamburger:checked ~ .drawer-list li:nth-child(36) {
+  transition: transform 1s 2.88s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+}
+
+input.hamburger:checked ~ .drawer-list li:nth-child(37) {
+  transition: transform 1s 2.96s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+}
+
+input.hamburger:checked ~ .drawer-list li:nth-child(38) {
+  transition: transform 1s 3.04s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+}
+
+input.hamburger:checked ~ .drawer-list li:nth-child(39) {
+  transition: transform 1s 3.12s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+}
+
+input.hamburger:checked ~ .drawer-list li:nth-child(40) {
+  transition: transform 1s 3.2s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+}
+
+input.hamburger:checked ~ .drawer-list li:nth-child(41) {
+  transition: transform 1s 3.28s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+}
+
+input.hamburger:checked ~ .drawer-list li:nth-child(42) {
+  transition: transform 1s 3.36s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+}
+
+input.hamburger:checked ~ .drawer-list li:nth-child(43) {
+  transition: transform 1s 3.44s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+}
+
+input.hamburger:checked ~ .drawer-list li:nth-child(44) {
+  transition: transform 1s 3.52s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+}
+
+input.hamburger:checked ~ .drawer-list li:nth-child(45) {
+  transition: transform 1s 3.6s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+}
+
+input.hamburger:checked ~ .drawer-list li:nth-child(46) {
+  transition: transform 1s 3.68s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+}
+
+input.hamburger:checked ~ .drawer-list li:nth-child(47) {
+  transition: transform 1s 3.76s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+}
+
+input.hamburger:checked ~ .drawer-list li:nth-child(48) {
+  transition: transform 1s 3.84s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+}
+
+input.hamburger:checked ~ .drawer-list li:nth-child(49) {
+  transition: transform 1s 3.92s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+}
+
+input.hamburger:checked ~ .drawer-list li:nth-child(50) {
+  transition: transform 1s 4s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+}
+
+input.hamburger:checked ~ .drawer-list li a {
+  padding-right: 15px;
+}
+
+input.hamburger:checked ~ label > i {
+  background-color: transparent;
+  transform: rotate(90deg);
+}
+
+input.hamburger:checked ~ label > i:before {
+  transform: translate(-50%, -50%) rotate(315deg);
+}
+
+input.hamburger:checked ~ label > i:after {
+  transform: translate(-50%, -50%) rotate(-315deg);
+}
+
+input.hamburger:checked ~ label close {
+  color: #484c55;
+  width: 100%;
+}
+
+input.hamburger:checked ~ label open {
+  color: #484c55;
+  width: 0;
+}
+
+label.hamburger {
+  z-index: 9999;
+  position: relative;
+  top: 25px;
+  display: block;
+  height: 40px;
+  width: 40px;
+}
+
+label.hamburger:hover {
+  cursor: pointer;
+}
+
+label.hamburger text close,
+label.hamburger text open {
+  text-transform: uppercase;
+  font-size: 0.8em;
+  align-text: center;
+  position: absolute;
+  transform: translateY(50px);
+  text-align: center;
+  overflow: hidden;
+  transition: width 0.25s 0.35s, color 0.45s 0.35s;
+}
+
+label.hamburger text close {
+  color: #484c55;
+  right: 0;
+  width: 0;
+}
+
+label.hamburger text open {
+  color: #484c55;
+  width: 100%;
+}
+
+label.hamburger > i {
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  top: 50%;
+  background-color: #484c55;
+  pointer-events: auto;
+  transition-duration: 0.35s;
+  transition-delay: 0.35s;
+}
+
+label.hamburger > i:before, label.hamburger > i:after {
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 1px;
+  left: 50%;
+  background-color: #484c55;
+  content: "";
+  transition: transform 0.35s;
+  transform-origin: 50% 50%;
+}
+
+label.hamburger > i:before {
+  transform: translate(-50%, -14px);
+}
+
+label.hamburger > i:after {
+  transform: translate(-50%, 14px);
+}
+
+/*# sourceMappingURL=style_preproc.css.map */

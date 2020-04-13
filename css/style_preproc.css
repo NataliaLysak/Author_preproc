@@ -2,6 +2,8 @@
 @import "../fontawesome-free-5.0.8/web-fonts-with-css/css/fontawesome-all.css";
 @import "owl.carousel.min.css";
 @import "owl.theme.default.min.css";
+@import "bootstrap.min.css";
+@import "bootstrap-theme.css";
 @font-face {
   font-family: "Open Sans";
   src: url("../fonts/OpenSans.eot");
